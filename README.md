@@ -23,6 +23,10 @@ Summary:
     `Compression.gzip`
 * Again, the file size differences are much more pronounced on real data
 
+(As an aside, I tested `Compression.gunzip` vs `GZIPInputStream` on my real data,
+and `Compression.gunzip` very slightly beat out `GZIS` in terms of speed on
+every run, although probably not statistically significantly.)
+
 ### Sample Output (2018 Core i9 MacBook Pro on fast NVMe storage):
 ```
 Generating input data
